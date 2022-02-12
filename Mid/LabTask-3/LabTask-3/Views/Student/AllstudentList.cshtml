@@ -1,0 +1,28 @@
+﻿@model List<LabTask_3.Models.Database.Student>
+@{
+    ViewBag.Title = "AllstudentList";
+    Layout = "~/Views/Shared/_studentlayout.cshtml";
+}
+<h1>Students List</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>CGPA</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+            <td>@b.id</td>
+            <td>@b.name</td>
+            <td>@b.dob</td>
+            <td>@b.cgpa</td>
+            <td><a href="/student/Edit/@b.id" class="btn btn-success">Edit</a></td>
+            <td><a href="/student/Delete/@b.id" class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+
+</table>

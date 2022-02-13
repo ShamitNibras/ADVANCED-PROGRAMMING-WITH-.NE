@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f9e6485a-8895-4b4f-adef-a1566fd05bdb": {
+      "ProjectGuid": "f9e6485a-8895-4b4f-adef-a1566fd05bdb",
+      "DisplayName": "Entity",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

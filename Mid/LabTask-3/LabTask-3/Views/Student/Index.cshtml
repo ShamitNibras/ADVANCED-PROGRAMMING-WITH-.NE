@@ -1,0 +1,39 @@
+﻿@model List<LabTask_3.Models.Student.Student>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Student.cshtml";
+}
+
+
+<h3 style="font-family:'Gill Sans';font-style:italic;color:burlywood;text-align:center">
+    BSc in Computer Science & Engineering in American International
+    University-Bangladesh
+</h3>
+<br><br>
+    <table class="table table-bordered">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Cgpa</th>
+
+
+        </tr>
+        @foreach (var s in Model)
+        {
+    <tr>
+        <td>@s.Id</td>
+        <td>@s.Name</td>
+        <td>@s.Date of Birth</td>
+        <td>@s.Cgpa</td>
+
+
+
+        <td>
+            <a href="/User/Edit/@s.Id" class="btn btn-info">Update</a>
+            <a href="/User/Sure/@s.Id" class="btn btn-danger">Remove</a>
+        </td>
+
+    </tr>
+        }
+    </table>

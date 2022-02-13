@@ -1,0 +1,27 @@
+﻿@model LabTask_3.Models.Student.Student
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Student.cshtml";
+}
+
+<h2>Create</h2>
+
+<form action="/Student/Create" method="post">
+    <div class="form-floating">
+        <label for="floatingInput"><b>Name</b></label>
+        <input type="text" name="Name" class="form-control" id="floatingInput" placeholder="Name">
+    </div>
+    <div class="form-floating">
+        <label for="floatingInput"><b>Date of Birth</b></label>
+        <input type="date" name="[Date of Birth]" class="form-control" id="floatingInput" placeholder="[Date of Birth]">
+    </div>
+    <div class="form-floating">
+        <label for="floatingInput"><b>Cgpa</b></label>
+        <input type="text" name="cgpa" class="form-control" id="floatingInput" placeholder="cgpa">
+    </div>
+
+    <br>
+    <input type="submit" value="Add" />
+
+</form>
+

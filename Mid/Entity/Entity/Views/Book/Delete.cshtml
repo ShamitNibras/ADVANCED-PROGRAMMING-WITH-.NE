@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<div class="text-center">
+     <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="BookName">
+
+   
+
+    <input type="text" name="Author" value="@Model.Author" class="form-control" placeholder="Author">
+
+    <input type="text" name="Publisher" value="@Model.Publisher" class="form-control" placeholder="Publisher">
+
+    <input type="text" name="Price" value="@Model.Price" class="form-control" placeholder="Price">
+
+
+    <br>
+    <p class="text-info">Are you sure Delete this information</p>
+    <a href="/Book/Sure/@Model.id"><button class="btn btn-danger">I am sure</button></a>
+</div>

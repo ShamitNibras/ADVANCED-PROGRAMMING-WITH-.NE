@@ -1,0 +1,32 @@
+﻿@model Entity.Models.Database.User
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<form action="/User/Create" method="post">
+    <div class="form-floating">
+        <label for="floatingInput"><b>Name</b></label>
+        <input type="text" name="Name" class="form-control" id="floatingInput" placeholder="Name">
+    </div>
+    <div class="form-floating">
+        <label for="floatingInput"><b>Id</b></label>
+        <input type="text" name="Id" class="form-control" id="floatingInput" placeholder="Id">
+    </div>
+    <div class="form-floating">
+        <label for="floatingInput"><b>Email Address</b></label>
+        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    </div>
+    <div class="form-floating">
+        <label for="floatingInput"><b>Username</b></label>
+        <input type="text" name="Username" class="form-control" id="floatingInput" placeholder="Username">
+    </div>
+    <div class="form-floating">
+        <label for="floatingPassword"><b>Password</b></label>
+        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+    </div>
+    <br>
+    <input type="submit" value="Add" />
+
+    </form>
+
